@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FBLA Organizational Leadership Study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<h1>FBLA Organizational Leadership Study</h1>
+
+<div class="nav">
+  <button onclick="showSection('flashcards')">Flashcards</button>
+  <button onclick="showSection('test')">Practice Test</button>
+  <button onclick="showSection('weakness')">Weakness Trainer</button>
+  <button onclick="showSection('ai')">AI Tutor</button>
+</div>
+
+<!-- Flashcards -->
+<div id="flashcards" class="section">
+  <h2>Flashcards</h2>
+  <div id="card" onclick="flipCard()">Click to Reveal</div>
+  <button onclick="nextCard()">Next</button>
+  <button onclick="markKnown(true)">✅ I Knew It</button>
+  <button onclick="markKnown(false)">❌ I Missed It</button>
+</div>
+
+<!-- Test -->
+<div id="test" class="section hidden">
+  <h2>Practice Test</h2>
+  <div id="question"></div>
+  <div id="answers"></div>
+  <button onclick="nextQuestion()">Next Question</button>
+</div>
+
+<!-- Weakness -->
+<div id="weakness" class="section hidden">
+  <h2>Your Weak Areas</h2>
+  <ul id="weakList"></ul>
+</div>
+
+<!-- AI Tutor -->
+<div id="ai" class="section hidden">
+  <h2>AI Tutor</h2>
+  <textarea id="aiInput" placeholder="Ask anything..."></textarea>
+  <button onclick="askAI()">Ask</button>
+  <div id="aiResponse"></div>
+</div>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
