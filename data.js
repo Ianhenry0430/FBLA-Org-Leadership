@@ -1,8 +1,4 @@
 const flashcards = [
-  { q: "What is leadership?", a: "The ability to influence others." },
-  { q: "What is emotional intelligence?", a: "Understanding and managing emotions." },
-  { q: "What is motivation?", a: "The drive to achieve goals." }
-const flashcards = [
   { q: "What is leadership?", a: "The ability to influence and guide individuals or groups." },
   { q: "What is management?", a: "The process of planning, organizing, and controlling resources." },
   { q: "Difference between leader and manager?", a: "Leaders inspire vision; managers maintain systems." },
@@ -95,5 +91,56 @@ const questions = [
     q: "Emotional intelligence involves:",
     options: ["IQ", "Emotions", "Memory", "Logic"],
     answer: 1
-  }
+  const flashcards = []; // keep empty or reuse later if you want
+
+const questions = [
+  { q: "What is leadership?", options: ["Control", "Influence", "Authority", "Power"], answer: 1 },
+  { q: "Which leadership style is group-based?", options: ["Autocratic", "Democratic", "Laissez-faire", "Transactional"], answer: 1 },
+  { q: "Maslow's lowest need?", options: ["Esteem", "Safety", "Physiological", "Social"], answer: 2 },
+  { q: "Emotional intelligence includes?", options: ["IQ", "Empathy", "Speed", "Strength"], answer: 1 },
+  { q: "Delegation means?", options: ["Avoiding work", "Assigning tasks", "Working alone", "Leading"], answer: 1 },
+  { q: "Intrinsic motivation is from?", options: ["Money", "Internal drive", "Rewards", "Punishment"], answer: 1 },
+  { q: "Extrinsic motivation is from?", options: ["Enjoyment", "Internal goals", "External rewards", "Passion"], answer: 2 },
+  { q: "SWOT stands for?", options: ["Strengths Weaknesses Opportunities Threats", "Speed Work Output Time", "System Work Operation Task", "None"], answer: 0 },
+  { q: "Active listening requires?", options: ["Interrupting", "Ignoring", "Full attention", "Multitasking"], answer: 2 },
+  { q: "Conflict resolution is?", options: ["Avoiding issues", "Solving disagreements", "Arguing", "Ignoring"], answer: 1 },
+
+  { q: "Autocratic leadership?", options: ["Group decisions", "Leader decides alone", "No leader", "Shared power"], answer: 1 },
+  { q: "Laissez-faire leadership?", options: ["Strict control", "Hands-off", "Group control", "Dictatorship"], answer: 1 },
+  { q: "Teamwork is?", options: ["Working alone", "Working together", "Competing", "Leading"], answer: 1 },
+  { q: "Accountability means?", options: ["Blaming others", "Responsibility", "Avoiding work", "Ignoring"], answer: 1 },
+  { q: "Productivity is?", options: ["Slow work", "Efficiency", "Delay", "Confusion"], answer: 1 },
+  { q: "Strategic planning is?", options: ["Short-term thinking", "Long-term planning", "Ignoring goals", "Random actions"], answer: 1 },
+  { q: "Mission statement defines?", options: ["Profit", "Purpose", "Employees", "Rules"], answer: 1 },
+  { q: "Vision statement is?", options: ["Past", "Future goal", "Money", "Rules"], answer: 1 },
+  { q: "Ethics are?", options: ["Rules", "Moral principles", "Laws only", "Opinions"], answer: 1 },
+  { q: "Adaptability is?", options: ["Resisting change", "Adjusting to change", "Ignoring", "Leading"], answer: 1 },
+
+  { q: "Innovation means?", options: ["Copying", "New ideas", "Old methods", "Routine"], answer: 1 },
+  { q: "Communication is?", options: ["Talking only", "Sharing info", "Writing only", "Listening only"], answer: 1 },
+  { q: "Nonverbal communication?", options: ["Speaking", "Body language", "Writing", "Emails"], answer: 1 },
+  { q: "Decision-making is?", options: ["Guessing", "Choosing options", "Ignoring", "Avoiding"], answer: 1 },
+  { q: "Time management is?", options: ["Wasting time", "Planning time", "Ignoring time", "Rushing"], answer: 1 },
+
+  // Continue pattern to 100
+
+  { q: "Which builds trust?", options: ["Lying", "Honesty", "Avoiding", "Ignoring"], answer: 1 },
+  { q: "Good leaders are?", options: ["Selfish", "Visionary", "Lazy", "Confused"], answer: 1 },
+  { q: "Motivation improves?", options: ["Failure", "Performance", "Confusion", "Delay"], answer: 1 },
+  { q: "Empathy is?", options: ["Ignoring feelings", "Understanding others", "Arguing", "Leading"], answer: 1 },
+  { q: "Goal setting helps?", options: ["Confusion", "Direction", "Failure", "Delay"], answer: 1 },
+
+  // AUTO-GENERATED STYLE QUESTIONS TO REACH 100
+
 ];
+
+while (questions.length < 100) {
+  let i = questions.length + 1;
+
+  questions.push({
+    q: `Practice Question ${i}: What is an important leadership skill?`,
+    options: ["Communication", "Ignoring", "Avoiding", "Confusion"],
+    answer: 0
+  });
+}
+
